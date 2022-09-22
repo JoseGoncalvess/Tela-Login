@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/style.css" />
     <link rel="stylesheet" href="style/allscrens.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
     <title>Document</title>
   </head>
   <body>
@@ -18,21 +22,36 @@
             Seja bem vindo novamente, faça o login para para ter acesso a asua
             are a deusuario.
           </p>
-          <form action="login.php" method="post">
-            <label for="email">Digite seu e-mail</label>
-            <input type="email" name="email" id="email" required />
+          <form action="login.php" method="post" autocomplete="on">
+            <div class="campo">
+              <span class="material-icons">person</span>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Digite seu email"
+                required
+                autocomplete="email"
+              /><label for="email">E-mail</label>
+            </div>
 
-            <label for="senha">Digite sua Senha</label>
-            <input
-              type="password"
-              name="senha"
-              id="senha"
-              required
-              minlength="8"
-            />
+            <div class="campo">
+              <span class="material-icons">lock</span>
+              <input
+                type="password"
+                name="senha"
+                id="senha"
+                required
+                minlength="8"
+                placeholder="Digite sua senha"
+                autocomplete="current-password"
+              /><label for="senha">Senha</label>
+            </div>
 
             <button type="submit" id="enviar">Fazer login</button>
-            <button type="submit" id="senha">Esqueci minha Senha</button>
+            <a href="Esqueci.html"
+              >Esqueci Minha Senha <i class="material-icons">settings</i></a
+            >
           </form>
         </div>
       </section>
