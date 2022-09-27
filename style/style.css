@@ -96,3 +96,15 @@ div.campo > input{
   border-radius: 8px;
   transform: translateY(-8px);
 }
+
+form > input[type=submit]{
+  display: block;
+  text-align: center;
+  background-color: #707070;
+  border: none;
+  width: 250px;
+  height: 30px;
+  font-size: 1.2em;
+  color: white;
+  
+}
