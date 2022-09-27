@@ -22,6 +22,8 @@ section#login >div#login{
   
 }
 
+
+
 }
 /*TV*/
 @media screen and (min-width:992px) {
@@ -49,4 +51,6 @@ section#login >div#login{
     div#form > p{
       font-size: 1.2em;
     }
+
+    
 }
